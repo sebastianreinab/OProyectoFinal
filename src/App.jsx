@@ -4,6 +4,7 @@ import { BrowserRouter, Link, Navigate,Route, Routes } from 'react-router-dom'
 import { Login } from './componentes/Login'
 import { Regis } from './componentes/Regis'
 import { Principal } from './Principal'
+import { VerJue } from './componentes/VerJue'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <li><h1><Link to="/">Princi</Link></h1></li>
             <li><h1><Link to="login">Login</Link></h1></li>
             <li><h1><Link to="regis">Registro</Link></h1></li>
+            <li><h1><Link to="jue">Juegos</Link></h1></li>
           </ul>
         </nav>
       </div>
@@ -22,6 +24,7 @@ function App() {
           <Route path="/" element={<Principal />} />
           <Route path="login" element={<Login />} />
           <Route path="regis" element={<Regis />} />
+          <Route path="jue" element={<VerJue />} />
         </Routes>
     </>
   )
